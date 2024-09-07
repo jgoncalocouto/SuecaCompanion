@@ -24,11 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardCells = document.querySelectorAll('.card-cell');
     cardCells.forEach(cell => {
         cell.addEventListener('click', () => {
-            if (cell.classList.contains('active')) {
-                cell.classList.remove('active');
+            if (cell.classList.contains('state-1')) {
+                // If state is 1, change to state 2
+                cell.classList.remove('state-1');
+                cell.classList.add('state-2');
+                cell.textContent = '2';
+            } else if (cell.classList.contains('state-2')) {
+                // If state is 2, reset to empty
+                cell.classList.remove('state-2');
                 cell.textContent = ''; // Set cell to empty
             } else {
-                cell.classList.add('active');
+                // Default state, change to state 1
+                cell.classList.add('state-1');
                 cell.textContent = '1'; // Set cell to "1"
             }
         });
