@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Logger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Card Logger</h1>
+
+        <!-- Card Class Buttons -->
+        <div class="button-group">
+            <button id="buttonSpade">♠️ Spade</button>
+            <button id="buttonHeart">❤️ Heart</button>
+            <button id="buttonDiamond">♦️ Diamond</button>
+            <button id="buttonClub">♣️ Club</button>
+        </div>
+
+        <!-- Input Field and Log Button -->
+        <input type="text" id="cardCodeInput" placeholder="Enter Card Code (e.g., A, 7)">
+        <button id="buttonLogCard">Log Card</button>
+
+        <!-- Display Area for Logs -->
+        <div id="logDisplay" class="log-display"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
