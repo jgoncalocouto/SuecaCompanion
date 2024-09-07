@@ -36,6 +36,12 @@ th {
 
 .card-cell {
     background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.card-cell.active {
+    background-color: blue;
+    color: white;
 }
 
 .special-section {
