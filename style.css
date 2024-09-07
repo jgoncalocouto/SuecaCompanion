@@ -14,33 +14,47 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+    width: 400px;
 }
 
-.button-group {
-    margin-bottom: 15px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.card-cell {
+    background-color: #fff;
+}
+
+.special-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.special-buttons {
+    margin-top: 10px;
 }
 
 button {
+    padding: 5px 10px;
     margin: 5px;
-    padding: 10px;
     font-size: 16px;
     cursor: pointer;
 }
 
-input {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.log-display {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #eee;
-    border-radius: 4px;
-    height: 150px;
-    overflow-y: auto;
-    font-size: 14px;
-    text-align: left;
+select {
+    margin-left: 5px;
+    padding: 5px;
 }
