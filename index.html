@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sueca Escrita</title> <!-- Updated Title -->
+    <title>Sueca Escrita</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Sueca Escrita</h1> <!-- Updated Heading -->
-
+        <h1>Sueca Escrita</h1>
+        
         <!-- Card Logger Table -->
         <table id="cardTable">
             <thead>
@@ -24,55 +24,63 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>♠️ Spades</td>
-                    <td class="card-cell" data-suit="spades" data-card="A"></td>
-                    <td class="card-cell" data-suit="spades" data-card="7"></td>
-                    <td class="card-cell" data-suit="spades" data-card="K"></td>
-                    <td class="card-cell" data-suit="spades" data-card="J"></td>
-                    <td class="card-cell" data-suit="spades" data-card="Q"></td>
+                    <th>♠️ Spades</th>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
                 </tr>
                 <tr>
-                    <td>❤️ Hearts</td>
-                    <td class="card-cell" data-suit="hearts" data-card="A"></td>
-                    <td class="card-cell" data-suit="hearts" data-card="7"></td>
-                    <td class="card-cell" data-suit="hearts" data-card="K"></td>
-                    <td class="card-cell" data-suit="hearts" data-card="J"></td>
-                    <td class="card-cell" data-suit="hearts" data-card="Q"></td>
+                    <th>❤️ Hearts</th>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
                 </tr>
                 <tr>
-                    <td>♦️ Diamonds</td>
-                    <td class="card-cell" data-suit="diamonds" data-card="A"></td>
-                    <td class="card-cell" data-suit="diamonds" data-card="7"></td>
-                    <td class="card-cell" data-suit="diamonds" data-card="K"></td>
-                    <td class="card-cell" data-suit="diamonds" data-card="J"></td>
-                    <td class="card-cell" data-suit="diamonds" data-card="Q"></td>
+                    <th>♦️ Diamonds</th>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
                 </tr>
                 <tr>
-                    <td>♣️ Clubs</td>
-                    <td class="card-cell" data-suit="clubs" data-card="A"></td>
-                    <td class="card-cell" data-suit="clubs" data-card="7"></td>
-                    <td class="card-cell" data-suit="clubs" data-card="K"></td>
-                    <td class="card-cell" data-suit="clubs" data-card="J"></td>
-                    <td class="card-cell" data-suit="clubs" data-card="Q"></td>
+                    <th>♣️ Clubs</th>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
+                    <td class="card-cell"></td>
                 </tr>
             </tbody>
         </table>
 
-        <!-- Special Cards Section -->
+        <!-- Special Card Section -->
         <div class="special-section">
-            <label for="specialType">Special Card Type:</label>
-            <select id="specialType">
-                <option value="spades">♠️ Spades</option>
-                <option value="hearts">❤️ Hearts</option>
-                <option value="diamonds">♦️ Diamonds</option>
-                <option value="clubs">♣️ Clubs</option>
-            </select>
-
-            <div class="special-buttons">
-                <button id="specialMinus">-1</button>
-                <span id="specialTotal">0</span>
-                <button id="specialPlus">+1</button>
+            <div>
+                <label for="specialType">Special Card Type:</label>
+                <select id="specialType">
+                    <option>♠️ Spades</option>
+                    <option>❤️ Hearts</option>
+                    <option>♦️ Diamonds</option>
+                    <option>♣️ Clubs</option>
+                </select>
             </div>
+            <div class="special-buttons">
+                <button id="specialPlus">+1</button>
+                <button id="specialMinus">-1</button>
+            </div>
+            <p>Number of Special Cards: <span id="specialTotal">0</span></p>
+        </div>
+
+        <!-- Team Scores Section -->
+        <div class="team-scores">
+            <h2>Team Scores</h2>
+            <p>Team 1 Points: <span id="team1Points">0</span></p>
+            <p>Team 2 Points: <span id="team2Points">0</span></p>
         </div>
     </div>
 
