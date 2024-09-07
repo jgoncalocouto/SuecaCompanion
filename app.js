@@ -20,15 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
         specialTotal.textContent = specialSum;
     }
 
-    // Event listener for card logging
+    // Event listener for toggling card cells
     const cardCells = document.querySelectorAll('.card-cell');
     cardCells.forEach(cell => {
         cell.addEventListener('click', () => {
-            if (cell.textContent === '') {
-                cell.textContent = '1';
+            if (cell.classList.contains('active')) {
+                cell.classList.remove('active');
+                cell.textContent = ''; // Set cell to empty
             } else {
-                const count = parseInt(cell.textContent);
-                cell.textContent = count + 1;
+                cell.classList.add('active');
+                cell.textContent = '1'; // Set cell to "1"
             }
         });
     });
