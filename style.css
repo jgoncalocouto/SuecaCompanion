@@ -39,8 +39,13 @@ th {
     transition: background-color 0.3s ease;
 }
 
-.card-cell.active {
+.card-cell.state-1 {
     background-color: blue;
+    color: white;
+}
+
+.card-cell.state-2 {
+    background-color: green;
     color: white;
 }
 
