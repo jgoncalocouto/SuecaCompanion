@@ -49,6 +49,13 @@ th {
     color: white;
 }
 
+.box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
 .special-section {
     margin-top: 20px;
     text-align: center;
